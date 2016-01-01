@@ -11,6 +11,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class FileUtil {
+    /**
+     * 
+     * @param path
+     * @return
+     */
     public static String readFile(String path) {
         BufferedReader br = null;
         StringBuffer sb = new StringBuffer();
