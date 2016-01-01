@@ -11,11 +11,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class FileUtil {
-    /**
-     * 1111111111
-     * @param path
-     * @return
-     */
+  
     public static String readFile(String path) {
         BufferedReader br = null;
         StringBuffer sb = new StringBuffer();
@@ -42,11 +38,7 @@ public class FileUtil {
         return sb.toString();
     }
 
-    /**
-     * 
-     * @param path
-     * @return
-     */
+
     public static String readUTF8File(String path) {
         BufferedReader br = null;
         StringBuffer sb = new StringBuffer();
