@@ -42,6 +42,11 @@ public class FileUtil {
         return sb.toString();
     }
 
+    /**
+     * 
+     * @param path
+     * @return
+     */
     public static String readUTF8File(String path) {
         BufferedReader br = null;
         StringBuffer sb = new StringBuffer();
