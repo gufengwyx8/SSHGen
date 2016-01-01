@@ -1,0 +1,350 @@
+<package name="auditLog" namespace="/auditLog" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listAuditLog" class="auditLogAction" method="listAuditLog">
+		<result>/auditLog/listAuditLog.jsp</result>
+	</action>
+	<action name="saveAuditLog" class="auditLogAction" method="saveAuditLog">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryAuditLog" class="auditLogAction" method="destoryAuditLog">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listAuditLogDetail" class="auditLogAction"
+		method="listAuditLogDetail">
+		<result>/auditLog/listAuditLogDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="auditLogAction"
+		method="submitContent">
+		<result type="redirect">/auditLog/listAuditLogDetail?auditLog.id=${auditLog.id}</result>
+	</action>
+	<action name="download" class="auditLogAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="detector" namespace="/detector" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listDetector" class="detectorAction" method="listDetector">
+		<result>/detector/listDetector.jsp</result>
+	</action>
+	<action name="saveDetector" class="detectorAction" method="saveDetector">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryDetector" class="detectorAction" method="destoryDetector">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listDetectorDetail" class="detectorAction"
+		method="listDetectorDetail">
+		<result>/detector/listDetectorDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="detectorAction"
+		method="submitContent">
+		<result type="redirect">/detector/listDetectorDetail?detector.id=${detector.id}</result>
+	</action>
+	<action name="download" class="detectorAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="device" namespace="/device" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listDevice" class="deviceAction" method="listDevice">
+		<result>/device/listDevice.jsp</result>
+	</action>
+	<action name="saveDevice" class="deviceAction" method="saveDevice">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryDevice" class="deviceAction" method="destoryDevice">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listDeviceDetail" class="deviceAction"
+		method="listDeviceDetail">
+		<result>/device/listDeviceDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="deviceAction"
+		method="submitContent">
+		<result type="redirect">/device/listDeviceDetail?device.id=${device.id}</result>
+	</action>
+	<action name="download" class="deviceAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="deviceGroup" namespace="/deviceGroup" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listDeviceGroup" class="deviceGroupAction" method="listDeviceGroup">
+		<result>/deviceGroup/listDeviceGroup.jsp</result>
+	</action>
+	<action name="saveDeviceGroup" class="deviceGroupAction" method="saveDeviceGroup">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryDeviceGroup" class="deviceGroupAction" method="destoryDeviceGroup">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listDeviceGroupDetail" class="deviceGroupAction"
+		method="listDeviceGroupDetail">
+		<result>/deviceGroup/listDeviceGroupDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="deviceGroupAction"
+		method="submitContent">
+		<result type="redirect">/deviceGroup/listDeviceGroupDetail?deviceGroup.id=${deviceGroup.id}</result>
+	</action>
+	<action name="download" class="deviceGroupAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="office" namespace="/office" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listOffice" class="officeAction" method="listOffice">
+		<result>/office/listOffice.jsp</result>
+	</action>
+	<action name="saveOffice" class="officeAction" method="saveOffice">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryOffice" class="officeAction" method="destoryOffice">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listOfficeDetail" class="officeAction"
+		method="listOfficeDetail">
+		<result>/office/listOfficeDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="officeAction"
+		method="submitContent">
+		<result type="redirect">/office/listOfficeDetail?office.id=${office.id}</result>
+	</action>
+	<action name="download" class="officeAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="right" namespace="/right" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listRight" class="rightAction" method="listRight">
+		<result>/right/listRight.jsp</result>
+	</action>
+	<action name="saveRight" class="rightAction" method="saveRight">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryRight" class="rightAction" method="destoryRight">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listRightDetail" class="rightAction"
+		method="listRightDetail">
+		<result>/right/listRightDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="rightAction"
+		method="submitContent">
+		<result type="redirect">/right/listRightDetail?right.id=${right.id}</result>
+	</action>
+	<action name="download" class="rightAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="role" namespace="/role" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listRole" class="roleAction" method="listRole">
+		<result>/role/listRole.jsp</result>
+	</action>
+	<action name="saveRole" class="roleAction" method="saveRole">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryRole" class="roleAction" method="destoryRole">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listRoleDetail" class="roleAction"
+		method="listRoleDetail">
+		<result>/role/listRoleDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="roleAction"
+		method="submitContent">
+		<result type="redirect">/role/listRoleDetail?role.id=${role.id}</result>
+	</action>
+	<action name="download" class="roleAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="tag" namespace="/tag" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listTag" class="tagAction" method="listTag">
+		<result>/tag/listTag.jsp</result>
+	</action>
+	<action name="saveTag" class="tagAction" method="saveTag">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryTag" class="tagAction" method="destoryTag">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listTagDetail" class="tagAction"
+		method="listTagDetail">
+		<result>/tag/listTagDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="tagAction"
+		method="submitContent">
+		<result type="redirect">/tag/listTagDetail?tag.id=${tag.id}</result>
+	</action>
+	<action name="download" class="tagAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="tagLocation" namespace="/tagLocation" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listTagLocation" class="tagLocationAction" method="listTagLocation">
+		<result>/tagLocation/listTagLocation.jsp</result>
+	</action>
+	<action name="saveTagLocation" class="tagLocationAction" method="saveTagLocation">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryTagLocation" class="tagLocationAction" method="destoryTagLocation">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listTagLocationDetail" class="tagLocationAction"
+		method="listTagLocationDetail">
+		<result>/tagLocation/listTagLocationDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="tagLocationAction"
+		method="submitContent">
+		<result type="redirect">/tagLocation/listTagLocationDetail?tagLocation.id=${tagLocation.id}</result>
+	</action>
+	<action name="download" class="tagLocationAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+
+<package name="tagLocationStatus" namespace="/tagLocationStatus" extends="erp-default">
+	<default-action-ref name="index" />
+	<action name="listTagLocationStatus" class="tagLocationStatusAction" method="listTagLocationStatus">
+		<result>/tagLocationStatus/listTagLocationStatus.jsp</result>
+	</action>
+	<action name="saveTagLocationStatus" class="tagLocationStatusAction" method="saveTagLocationStatus">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="destoryTagLocationStatus" class="tagLocationStatusAction" method="destoryTagLocationStatus">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">inputStream</param>
+		</result>
+	</action>
+	<action name="listTagLocationStatusDetail" class="tagLocationStatusAction"
+		method="listTagLocationStatusDetail">
+		<result>/tagLocationStatus/listTagLocationStatusDetail.jsp</result>
+	</action>
+	<action name="submitContent" class="tagLocationStatusAction"
+		method="submitContent">
+		<result type="redirect">/tagLocationStatus/listTagLocationStatusDetail?tagLocationStatus.id=${tagLocationStatus.id}</result>
+	</action>
+	<action name="download" class="tagLocationStatusAction" method="download">
+		<result name="success" type="stream">
+			<param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+			<param name="inputName">inputStream</param>
+			<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+			<param name="bufferSize">4096</param>
+		</result>
+	</action>
+</package>
+

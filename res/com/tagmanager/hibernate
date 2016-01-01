@@ -1,0 +1,10 @@
+<mapping class="com.tagmanager.model.AuditLog" />
+<mapping class="com.tagmanager.model.Detector" />
+<mapping class="com.tagmanager.model.Device" />
+<mapping class="com.tagmanager.model.DeviceGroup" />
+<mapping class="com.tagmanager.model.Office" />
+<mapping class="com.tagmanager.model.Right" />
+<mapping class="com.tagmanager.model.Role" />
+<mapping class="com.tagmanager.model.Tag" />
+<mapping class="com.tagmanager.model.TagLocation" />
+<mapping class="com.tagmanager.model.TagLocationStatus" />
